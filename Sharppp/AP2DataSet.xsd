@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AP2DataSet" targetNamespace="http://tempuri.org/AP2DataSet.xsd" xmlns:mstns="http://tempuri.org/AP2DataSet.xsd" xmlns="http://tempuri.org/AP2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AP2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AP2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SHARP_ACCOUNTING.Properties.Settings.GlobalReference.Default.AP2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="salesreportTableAdapter" GeneratorDataComponentClassName="salesreportTableAdapter" Name="salesreport" UserDataComponentName="salesreportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AP2ConnectionString (Settings)" DbObjectName="AP2.dbo.salesreport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT D_D, D_N, [Desc], city, gamt, Description FROM dbo.salesreport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="D_D" DataSetColumn="D_D" />
+              <Mapping SourceColumn="D_N" DataSetColumn="D_N" />
+              <Mapping SourceColumn="Desc" DataSetColumn="Desc" />
+              <Mapping SourceColumn="city" DataSetColumn="city" />
+              <Mapping SourceColumn="gamt" DataSetColumn="gamt" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AP2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AP2DataSet" msprop:Generator_UserDSName="AP2DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="salesreport" msprop:Generator_TableClassName="salesreportDataTable" msprop:Generator_TableVarName="tablesalesreport" msprop:Generator_TablePropName="salesreport" msprop:Generator_RowDeletingName="salesreportRowDeleting" msprop:Generator_UserTableName="salesreport" msprop:Generator_RowChangingName="salesreportRowChanging" msprop:Generator_RowEvHandlerName="salesreportRowChangeEventHandler" msprop:Generator_RowDeletedName="salesreportRowDeleted" msprop:Generator_RowEvArgName="salesreportRowChangeEvent" msprop:Generator_RowChangedName="salesreportRowChanged" msprop:Generator_RowClassName="salesreportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="D_D" msprop:Generator_ColumnVarNameInTable="columnD_D" msprop:Generator_ColumnPropNameInRow="D_D" msprop:Generator_ColumnPropNameInTable="D_DColumn" msprop:Generator_UserColumnName="D_D" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="D_N" msprop:Generator_ColumnVarNameInTable="columnD_N" msprop:Generator_ColumnPropNameInRow="D_N" msprop:Generator_ColumnPropNameInTable="D_NColumn" msprop:Generator_UserColumnName="D_N" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Desc" msprop:Generator_ColumnVarNameInTable="columnDesc" msprop:Generator_ColumnPropNameInRow="Desc" msprop:Generator_ColumnPropNameInTable="DescColumn" msprop:Generator_UserColumnName="Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="34" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city" msprop:Generator_ColumnVarNameInTable="columncity" msprop:Generator_ColumnPropNameInRow="city" msprop:Generator_ColumnPropNameInTable="cityColumn" msprop:Generator_UserColumnName="city" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gamt" msprop:Generator_ColumnVarNameInTable="columngamt" msprop:Generator_ColumnPropNameInRow="gamt" msprop:Generator_ColumnPropNameInTable="gamtColumn" msprop:Generator_UserColumnName="gamt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="34" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

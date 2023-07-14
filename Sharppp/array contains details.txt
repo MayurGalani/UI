@@ -1,0 +1,8 @@
+DispEmail.Text = account_detail_from_04[24];
+txtcontactdetails.Text = account_detail_from_04[17] + "," + account_detail_from_04[18] + "," + account_detail_from_04[19] + "," + account_detail_from_04[20];
+            txtpartyaddress.Text = account_detail_from_04[4] + "," + account_detail_from_04[5] + "," + account_detail_from_04[6] + "," + account_detail_from_04[7];
+            sitransport.Text = account_detail_from_04[30];
+            DisplayMob.Text = account_detail_from_04[18];
+            sitaxcode.Text = account_detail_from_04[32];
+            sipartybalance.Text = Convert.ToString(calculate_account_balance(sia_n.Text, sis_a.Text, Convert.ToString(sidatetime.Text)));
+            get_tax_desc_from_dc("S", sidbc.Text, Convert.ToInt32(sitaxcode.Text));

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBrowserApp1", "WpfBrowserApp1\WpfBrowserApp1.csproj", "{8CF66CCE-2EA6-4F80-8BC0-1AC2E27CFEB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CF66CCE-2EA6-4F80-8BC0-1AC2E27CFEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF66CCE-2EA6-4F80-8BC0-1AC2E27CFEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF66CCE-2EA6-4F80-8BC0-1AC2E27CFEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF66CCE-2EA6-4F80-8BC0-1AC2E27CFEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D18519B-191B-45FA-89F3-A93954006874}
+	EndGlobalSection
+EndGlobal
